@@ -7,6 +7,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding:0;
+    overflow-x: hidden;
 }
 
 h1{
@@ -79,11 +80,11 @@ header .line{
 
 .button2:hover{
     color:white;
-    background-color:#006341;
+    background-color:#117050;
 }
 
 .bar{
-    background-color:#006341;
+    background-color:#117050;
     width:168px;
     height:22px;
 }
@@ -275,4 +276,154 @@ header .line{
     background-position:center; 
     background-size: cover;
 }
- 
+
+.area4{
+    display:grid;
+    grid-template-columns: 450px 1fr;
+    background-color: #e8e9ee;
+}
+
+.area4--content{
+    padding:150px 80px;
+}
+
+.area4--text{
+    margin-bottom:50px;
+    line-height: 25px;
+}
+
+.area4--image{
+    
+    background-image: linear-gradient(rgba(70, 69, 69, 0),rgba(141, 138, 138, 0)),url('../bg3.jpg'); 
+    background-repeat: no-repeat; 
+    background-position:left; 
+
+}
+
+.area5{
+    height:700px;
+    background-image: linear-gradient(rgba(70, 69, 69, 0.164),rgba(141, 138, 138, 0.219)),url('../bg4.jpg'); 
+    background-repeat: no-repeat; 
+    background-position:center;
+    background-size: cover; 
+
+}
+
+.area6{
+    display:flex;
+    flex-direction: column;
+    height: 200px;
+    background-color:purple;
+    color:white;
+    justify-content:center;
+    align-items:center;
+}
+.area6 svg{
+    background-color:white;
+    border-radius: 50px;
+    height:100px;
+    width: 100px;
+}
+.area6 svg:hover{
+    border:3px solid #117050;
+    border-radius: 50px;
+    background-color:white;
+}
+
+footer{
+    display:flex;
+    font-family: 'Oswald', sans-serif;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color:#117050;
+    line-height: 50px;
+    color:white;
+    font-size:18px;
+    padding:40px;
+}
+
+footer a{
+    margin-top:-20px;
+    text-decoration:none;
+    color:white;
+}
+
+@media(min-width:769px) and (max-width:1140px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media(min-width:426px) and (max-width:768px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .area1, .area3{
+        grid-template-columns: 3fr 2fr;
+    }
+    .area2{
+        grid-template-columns: 2fr 3fr;
+    }
+}
+
+@media (max-width:425px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .header--menu{
+        margin-left:20px;
+    }
+    .header--search input{
+        max-width: 80px;
+    }
+
+    .banner h1{
+       font-size:60px;
+        line-height: 60px;
+    }
+
+    .banner--images img{
+        height:70px;
+        width: 70px;
+        border:3px solid purple;
+        border-radius:50%;
+        margin-right: 10px;
+    }
+
+    .area1,
+    .area2,
+    .area3,
+    .area4{
+        grid-template-columns: 1fr;
+    }
+
+    .area1--content,
+    .area2--content,
+    .area3--content,
+    .area4--content
+    {
+        padding:40px;
+    }
+
+    .area5{
+        height:200px;
+    }
+
+    .area6 h2{
+        font-size:16px;
+    }
+
+    .area6 svg{
+        height:50px;
+        width:50px;
+    }
+
+    footer{
+        font-size:12px;
+        padding:20px;
+    }
+}
