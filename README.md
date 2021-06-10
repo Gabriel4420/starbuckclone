@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="src/assets/homeapp.jpeg" alt="StarbuckClone" />
+  <img src="src/assets/homeapp.png" alt="StarbuckClone" />
 
   &#xa0;
 
